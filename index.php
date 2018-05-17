@@ -5,6 +5,10 @@ require_once "vendor/autoload.php";
 use Twilio\Rest\Client;
 
 
+//set headers
+header("content-type: text/xml");
+
+
 $dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 
